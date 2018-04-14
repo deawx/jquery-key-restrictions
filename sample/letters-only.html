@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" charset="UTF-8">
+
+<head>
+    <title>Letters Only</title>
+</head>
+
+<body>
+    <label for="letters-input">Letters Only:</label>
+    <input type="text" id="letters-input" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../src/jquery-key-restrictions.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#letters-input").lettersOnly();
+    });
+    </script>
+</body>
+</html>

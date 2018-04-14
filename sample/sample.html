@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" charset="UTF-8">
+
+<head>
+    <title>Sample Key Restrictions</title>
+</head>
+
+<body>
+    <label for="letters-input">Letters Only:</label>
+    <input type="text" id="letters-input" />
+    <br/>
+    <label for="numbers-input">Numbers Only:</label>
+    <input type="text" id="numbers-input" />
+    <br/>
+    <label for="alpha-numeric-input">Alpha Numeric Only:</label>
+    <input type="text" id="alpha-numeric-input" />
+    <br/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>        
+    <script type="text/javascript" src="../src/jquery-key-restrictions.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#letters-input").lettersOnly();
+            $("#numbers-input").numbersOnly();
+            $("#alpha-numeric-input").alphaNumericOnly();
+        });
+    </script>
+</body>
+
+</html>
